@@ -21,6 +21,73 @@ $ ./requirements.sh # Install build dependencies (apt-get)
 $ sudo python3 setup.py build
 $ sudo python3 setup.py install
 ```
+#### SDP record on server side AVRCP TAGET
+sudo sdptool records --xml  $MAC_ADDR
+<record>
+        <attribute id="0x0000">
+                <uint32 value="0x00010005" />
+        </attribute>
+        <attribute id="0x0001">
+                <sequence>
+                        <uuid value="0x110c" />
+                </sequence>
+        </attribute>
+        <attribute id="0x0004">
+                <sequence>
+                        <sequence>
+                                <uuid value="0x0100" />
+                                <uint16 value="0x0017" />
+                        </sequence>
+                        <sequence>
+                                <uuid value="0x0017" />
+                                <uint16 value="0x0104" />
+                        </sequence>
+                </sequence>
+        </attribute>
+        <attribute id="0x0005">
+                <sequence>
+                        <uuid value="0x1002" />
+                </sequence>
+        </attribute>
+        <attribute id="0x0009">
+                <sequence>
+                        <sequence>
+                                <uuid value="0x110e" />
+                                <uint16 value="0x0106" />
+                        </sequence>
+                </sequence>
+        </attribute>
+        <attribute id="0x000d">
+                <sequence>
+                        <sequence>
+                                <sequence>
+                                        <uuid value="0x0100" />
+                                        <uint16 value="0x001b" />
+                                </sequence>
+                                <sequence>
+                                        <uuid value="0x0017" />
+                                        <uint16 value="0x0104" />
+                                </sequence>
+                        </sequence>
+                        <sequence>
+                                <sequence>
+                                        <uuid value="0x0100" />
+                                        <uint16 value="0x1021" />
+                                </sequence>
+                                <sequence>
+                                        <uuid value="0x0008" />
+                                </sequence>
+                        </sequence>
+                </sequence>
+        </attribute>
+        <attribute id="0x0100">
+                <text value="AVRCP TG" />
+        </attribute>
+        <attribute id="0x0311">
+                <uint16 value="0x015f" />
+        </attribute>
+</record>
+
 
 #### Motivation
 This python project is created to test the CoverArts feature of bluetooth's AVRCP 1.6 profile in CAR Infotainment system.
