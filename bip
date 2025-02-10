@@ -1,0 +1,2 @@
+sudo hciconfig -a hci0 piscan
+python3 bipserver.py --address `cat ../mac_addr` --imagedir CoverArt

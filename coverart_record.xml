@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <record>
+    <attribute id="0x0001"> <!-- ServiceClassIDList IMAGING_RESPONDER_CLASS -->
+        <sequence>
+            <uuid value="0x111b" />
+        </sequence>
+    </attribute>
+    <attribute id="0x0003"> <!-- SDP_ATTR_SERVICE_ID 0x0003 -->
+        <sequence>
+            <uuid value="7163dd54-4a7e-11e2-b47c-0050c2490048" />
+        </sequence>
+    </attribute>
+    <attribute id="0x0004">
+        <!-- ProtocolDescriptorList -->
+        <sequence>
+            <sequence>
+                <uuid value="0x0100" />
+                <uint16 value="0x1021" />
+            </sequence>
+            <sequence>
+                <uuid value="0x0003" />
+            </sequence>
+            <sequence>
+                <uuid value="0x0008" />
+            </sequence>
+        </sequence>
+    </attribute>
+	<attribute id="0x0005"> <!-- Browse Group List -->
+		<sequence>
+			<uuid value="0x1002" />
+		</sequence>
+	</attribute>
+    <attribute id="0x0009"> <!-- Bluetooth Profile Descriptor List -->
+        <sequence>
+            <sequence>
+                <uuid value="0x0100" />
+                <uint16 value="0x1021" />
+            </sequence>
+        </sequence>
+    </attribute>
+    <attribute id="0x0100">
+        <!-- Service name -->
+        <text value="CoverArt" />
+    </attribute>
+</record>

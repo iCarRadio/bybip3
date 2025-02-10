@@ -1,0 +1,2 @@
+sudo hciconfig -a hci0 piscan
+python3 -B bipclient.py
