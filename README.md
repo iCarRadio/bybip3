@@ -1,9 +1,10 @@
 # pybip3
 ## TESTED SOFTWARE!
-Since discovering my Mercedes GLE support album art over AVRCP (even when setting the version to 1.6 in the developer options, weird), this is probably as far as the porting will go. 
+Since discovering my Mercedes GLE support album art over AVRCP (when setting the version to 1.6 in the developer options), this is probably as far as the porting will go. 
 I find the service with the [Cover Art UUID](./bipheaders.py) on port 4129. You might continue developing it, though.
+For testing, the client and server must be installed on different devices!
 [It's in the source code, though.](https://android.googlesource.com/platform/packages/apps/Bluetooth/+/master/src/com/android/bluetooth/avrcp/AvrcpCoverArtService.java)
-Maybe it's a Xiaomi thing. Might have to investigate further. Also consider moving to [nOBEX](https://github.com/nccgroup/nOBEX)
+Also consider moving to [nOBEX](https://github.com/nccgroup/nOBEX)
 ---
 Python implementation of Bluetooth's Basic Imaging Profile for sending images between devices and includes the ability to resize, and convert images to make them suitable for the receiving device
 
